@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dota 2 Pro Tips</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <header data-aos="fade-down">
+    <div class="container">
+      <h1>Dota 2 Pro Tips</h1>
+      <p>Master the battleground with insights from the pros.</p>
+      <a href="#" class="cta-button">Start Learning</a>
+    </div>
+  </header>
+
+  <section class="features" data-aos="fade-right">
+    <div class="container">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li data-aos="fade-left">🔍 Map awareness and vision control</li>
+        <li data-aos="fade-left" data-aos-delay="100">⚔️ Lane domination and farming techniques</li>
+        <li data-aos="fade-left" data-aos-delay="200">🧠 Mind games and counter‑picks</li>
+        <li data-aos="fade-left" data-aos-delay="300">🧩 Teamfight coordination</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hero-classes" data-aos="fade-left">
+    <div class="container">
+      <h2>Pick a Hero Class</h2>
+      <div class="hero-options">
+        <button>Strength</button>
+        <button>Agility</button>
+        <button>Intelligence</button>
+        <button>Universal</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="famous-heroes" data-aos="fade-up">
+    <div class="container">
+      <h2>Famous Heroes</h2>
+      <div class="hero-grid">
+        <div class="hero-card" onclick="playSound('axe')" id="axe">
+          <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/axe_full.png" alt="Axe"/>
+          <p>Axe</p>
+        </div>
+        <div class="hero-card" onclick="playSound('earthshaker')" id="earthshaker">
+          <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/earthshaker_full.png" alt="Earthshaker"/>
+          <p>Earthshaker</p>
+        </div>
+        <div class="hero-card" onclick="playSound('witch_doctor')" id="witch_doctor">
+          <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/witch_doctor_full.png" alt="Witch Doctor"/>
+          <p>Witch Doctor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="preview" data-aos="zoom-in">
+    <div class="container">
+      <h2>In‑Game Strategies</h2>
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rubick.png" alt="Preview"/>
+    </div>
+  </section>
+
+  <section class="cta-section" data-aos="zoom-in">
+    <div class="container">
+      <h2>Ready to Own the Game?</h2>
+      <p>Start your Dota 2 journey with exclusive pro tips and techniques.</p>
+      <a href="#" class="cta-button">Join Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dota 2 Tips. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS & Sound -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    function playSound(hero) {
+      const sound = new Audio(`sounds/${hero}.mp3`);
+      sound.play();
+    }
+  </script>
+</body>
+</html>
